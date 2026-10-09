@@ -1,0 +1,36 @@
+source ~/.vimrc
+
+" Searching
+" Search for files
+nnoremap <leader><leader> :action GotoFile<CR>
+" Search for text
+" nnoremap <leader>/ :action 
+
+" nmap h <Action>(ProjectViewNavigateLeft)
+" nmap j <Action>(ProjectViewNavigateDown)
+" nmap k <Action>(ProjectViewNavigateUp)
+" nmap l <Action>(ProjectViewNavigateRight)
+
+" Focus file explorer
+nnoremap <leader>e :action ActivateProjectToolWindow<CR>
+
+" Next open file
+nnoremap <Tab> :action NextTab<CR>
+
+" Previous open file
+nnoremap <S-Tab> :action PreviousTab<CR>
+
+" Vertical split
+nnoremap <leader>v :vsplit<CR>
+
+" Horizontal split
+nnoremap <leader>h :split<CR>
+
+" Close open file
+nnoremap <leader>bd :action CloseContent<CR>
+
+" Commenting
+" line comment
+nmap gcc :action CommentByLineComment<CR>
+" block comment
+nmap gcb :action CommentByBlockComment<CR>
