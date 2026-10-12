@@ -20,17 +20,8 @@ nnoremap <Tab> :action NextTab<CR>
 " Previous open file
 nnoremap <S-Tab> :action PreviousTab<CR>
 
-" Vertical split
-nnoremap <leader>v :vsplit<CR>
-
-" Horizontal split
-nnoremap <leader>h :split<CR>
-
 " Close open file
 nnoremap <leader>bd :action CloseContent<CR>
 
 " Commenting
-" line comment
-nmap gcc :action CommentByLineComment<CR>
-" block comment
-nmap gcb :action CommentByBlockComment<CR>
+set commentary
